@@ -11,8 +11,9 @@ export const Main: React.FC = () => {
   }, [navigate]);
 
   const onClickNavigateToContactUs = useCallback(() => {
-    navigate("/contact-us");
-  }, [navigate]);
+    // navigate("/contact-us");
+    window.location.href = "mailto:cdc@unswcdc.org";
+  }, []);
 
   return (
     <>
