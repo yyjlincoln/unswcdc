@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AnimatedButton } from "../components/AnimatedButton";
+import { MediumCenteredLogo } from "../components/logo";
 
 export const Main: React.FC = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -24,21 +25,22 @@ export const Main: React.FC = () => {
           </div>
           <div
             id="title_animate"
-            className="relative mx-auto text-center align-middle py-10"
+            className="relative mx-auto text-center align-middle py-10 space-y-4"
           >
+            <MediumCenteredLogo />
             <div className="overflow-hidden">
-              <span className="relative text-6xl md:text-7xl lg:text-8xl block font-extrabold text-white overflow-hidden py-1">
-                What's your identity?
+              <span className="relative text-6xl md:text-7xl lg:text-8xl block text-white overflow-hidden py-1 heading-font font-extrabold">
+                不止辩论
               </span>
             </div>
             <div className="overflow-hidden">
-              <span className="mt-3 relative text-2xl md:text-3xl lg:text-4xl block text-white font-extrabold">
-                A comprehensive discussion on identity
+              <span className="relative text-2xl md:text-3xl lg:text-4xl block text-white font-extrabold heading-font">
+                UNSW华辩 · UNSWCDC
               </span>
             </div>
           </div>
 
-          <div className="flex flex-col w-full max-w-sm sm:flex-row sm:w-auto sm:px-auto sm:max-w-lg sm:space-x-4 sm:space-y-0 space-y-4">
+          <div className="flex flex-col w-full max-w-sm sm:flex-row sm:w-auto sm:px-auto sm:max-w-lg sm:space-x-4 sm:space-y-0 space-y-4 px-4">
             <AnimatedButton
               onClick={() => {
                 setIsLoading(!isLoading);
@@ -46,7 +48,7 @@ export const Main: React.FC = () => {
               isLoading={isLoading}
               primary
             >
-              Test
+              我们是谁
             </AnimatedButton>
             <AnimatedButton
               onClick={() => {
@@ -54,13 +56,8 @@ export const Main: React.FC = () => {
               }}
               isLoading={isLoading}
             >
-              Test
+              联系我们
             </AnimatedButton>
-          </div>
-          <div className="absolute bottom-10">
-            <span className="font-extrabold text-gray-500 relative">
-              ⬇️ Learn more
-            </span>
           </div>
         </div>
       </div>
