@@ -18,7 +18,7 @@ code {
 
 @font-face {
   font-family: 'RuiZiChaoPaiChiGuangHei';
-  src: local('RuiZiChaoPaiChiGuangHei'), url(assets/font.ttf) format('woff');
+  src: local('RuiZiChaoPaiChiGuangHei'), url(assets/font.otf) format('woff');
 }
 
 
