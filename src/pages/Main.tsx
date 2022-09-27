@@ -16,10 +16,10 @@ export const Main: React.FC = () => {
             }}
             id="background_animate"
           >
-            <div className="w-screen h-screen bg-black left-0 top-0 opacity-30 absolute overflow-hidden"></div>
+            <div className="w-screen h-screen bg- bg-black left-0 top-0 opacity-30 absolute overflow-hidden"></div>
             <img
               className="object-cover w-screen h-screen overflow-hidden"
-              src="https://images.unsplash.com/photo-1488861859915-4b5a5e57649f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
+              src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
               alt="background"
             />
           </div>
@@ -30,12 +30,12 @@ export const Main: React.FC = () => {
             <MediumCenteredLogo />
             <div className="overflow-hidden">
               <span className="relative text-6xl md:text-7xl lg:text-8xl block text-white overflow-hidden py-1 heading-font font-extrabold">
-                不止辩论
+                我们 不止辩论
               </span>
             </div>
             <div className="overflow-hidden">
               <span className="relative text-2xl md:text-3xl lg:text-4xl block text-white font-extrabold heading-font">
-                UNSW华辩 · UNSWCDC
+                新南华辩社 · UNSWCDC
               </span>
             </div>
           </div>

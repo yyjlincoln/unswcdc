@@ -17,8 +17,8 @@ export const AnimatedButton: React.FC<Props> = ({
     return (
       "w-full flex items-center cursor-pointer justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md select-none " +
       (primary
-        ? "text-white bg-indigo-400 hover:bg-indigo-500 active:bg-indigo-800 md:py-4 md:text-lg md:px-10"
-        : "text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10")
+        ? "text-white bg-orange-400 hover:bg-orange-500 active:bg-orange-800 md:py-4 md:text-lg md:px-10"
+        : "text-orange-700 bg-orange-100 hover:bg-orange-200 md:py-4 md:text-lg md:px-10")
     );
   };
   return (
