@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { AnimatedButton } from "../components/AnimatedButton";
 import { CenteredLogo } from "../components/logo";
 
+import Marquee from "react-fast-marquee";
+
 export const Main: React.FC = () => {
   const navigate = useNavigate();
 
@@ -14,6 +16,22 @@ export const Main: React.FC = () => {
     // navigate("/contact-us");
     window.location.href = "mailto:cdc@unswcdc.org";
   }, []);
+
+  const getMarqueeElements = () => {
+    const el: JSX.Element[] = [];
+    for (let i = 0; i < 1000; i++) {
+      el.push(
+        <div
+          key={i}
+          className="text-8xl text-white px-4"
+          style={{ width: "fit-content" }}
+        >
+          新南华辩社
+        </div>
+      );
+    }
+    return <>{el}</>;
+  };
 
   return (
     <>
@@ -60,7 +78,11 @@ export const Main: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center text-center py-4 px-4 heading-font font-light">新南华辩社</div>
+      <div className="absolute bottom-10 w-full select-none">
+        <Marquee gradient={false} className="heading-font text-white text-4xl">
+          {getMarqueeElements()}
+        </Marquee>
+      </div>
     </>
   );
 };
