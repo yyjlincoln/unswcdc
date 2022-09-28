@@ -39,5 +39,9 @@
 }
 
 .heading-font {
-  font-family: "RuiZiChaoPaiChiGuangHei";
+  font-family: "ZiTiQuanXinYiGuanHeiTi";
+}
+
+.bg-gradient {
+  background: linear-gradient(180deg, #000000 50%, #6c1801 100%);
 }
